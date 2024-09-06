@@ -10,7 +10,7 @@ from datetime import datetime
 REPO_PATH = '.'
 REPO_URL = 'https://github.com/VisaganSP/placement-dsa-training.git'
 # Fetch token from environment variables
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+SECRET_TOKEN = os.getenv('SECRET_TOKEN')
 DATA_DIRECTORY_PATH = 'data'  # Directory containing JSON files
 #######################################################################################
 #######################################################################################
@@ -165,7 +165,7 @@ def save_readme(content, folder_name, filename):
 
 def create_github_folder_and_upload_readme(folder_name, file_path, commit_message):
     headers = {
-        'Authorization': f'token {GITHUB_TOKEN}',
+        'Authorization': f'token {SECRET_TOKEN}',
         'Accept': 'application/vnd.github.v3+json',
     }
     repo_name = REPO_URL.split('/')[-1].replace('.git', '')
