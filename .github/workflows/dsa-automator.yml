@@ -24,7 +24,7 @@ jobs:
 
       - name: Run script
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
         run: python automator.py
 
       - name: Commit and push changes
@@ -33,4 +33,4 @@ jobs:
           add: 'Day*/*.md'
           message: 'Automated README generation'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
