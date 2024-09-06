@@ -2,8 +2,11 @@ name: Generate README
 
 on:
   schedule:
-    - cron: '25 4 * * *'  # Runs daily at 9:55 AM IST (4:25 AM UTC)
+    - cron: '25 4 * * *'  # Runs daily at 10:00 AM IST (4:30 AM UTC)
   workflow_dispatch:  # Allows you to manually trigger the workflow
+
+permissions:
+  contents: write  # Allows the workflow to push changes to the repository
 
 jobs:
   generate-readme:
@@ -28,9 +31,11 @@ jobs:
         run: python automator.py
 
       - name: Commit and push changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: 'Day*/*.md'
-          message: 'Automated README generation'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Automated README generation"
+          git push https://x-access-token:${{ secrets.SECRET_TOKEN }}@github.com/VisaganSP/dsa-training-problems-automater.git HEAD:main
         env:
           SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
