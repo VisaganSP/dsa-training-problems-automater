@@ -1,0 +1,101 @@
+{
+    "date": "04-09-2024",
+    "day": "Day 5",
+    "topic1": "Two Pointers sf",
+    "topic2": "Hashmap sdfsdf",
+    "topic1_intro": "The Two Pointers technique involves using two indices to traverse a data structure (typically an array or a string). This method can help reduce the time complexity of problems that require checking pairs or managing subarray ranges. It is particularly useful for problems related to sorted arrays, linked lists, and searching pairs in linear time.",
+    "topic1_example": "Two pointers can efficiently solve the problem of finding pairs in a sorted array that sum up to a target value.",
+    "topic2_intro": "A Hashmap is a data structure that maps keys to values for highly efficient lookups. It allows storing data in key-value pairs, where each key is unique, and is often used to solve problems involving frequency counting, caching, and quick data retrieval.",
+    "topic2_example": "Using a Hashmap, you can count the frequency of words in a document or keep track of the inventory in an e-commerce application.",
+    "advantages": {
+        "topic1": {
+            "title": "Two Pointers",
+            "points": [
+                "Reduces time complexity from O(n²) to O(n) for certain problems.",
+                "Efficiently handles problems involving subsequences and sorted data."
+            ]
+        },
+        "topic2": {
+            "title": "Hashmap",
+            "points": [
+                "Provides average O(1) time complexity for insertions and lookups.",
+                "Useful for counting, grouping, and solving problems involving unique identification."
+            ]
+        }
+    },
+    "use_cases": {
+        "topic1": {
+            "title": "Two Pointers",
+            "points": [
+                "Finding pairs with a given sum in a sorted array.",
+                "Merging two sorted arrays."
+            ]
+        },
+        "topic2": {
+            "title": "Hashmap",
+            "points": [
+                "Frequency counting in strings and arrays.",
+                "Implementing caches for faster access."
+            ]
+        }
+    },
+    "problems": [
+        {
+            "title": "Lemonade Change",
+            "description": "You have a lemonade stand, and each lemonade costs $5. Customers are standing in a queue to buy from you, and each pays with either a $5, $10, or $20 bill. You must provide each customer with the correct change, ensuring your cash register has the right bills at all times. Return `true` if you can provide the correct change to every customer, otherwise return `false`.",
+            "constraints": [
+                "1 ≤ `bills.length` ≤ 10⁵",
+                "`bills[i]` is either `5`, `10`, or `20`."
+            ],
+            "examples": [
+                {
+                    "input": "bills = [5, 5, 5, 10, 20]",
+                    "output": "true",
+                    "explanation": "You provide change using available $5 and $10 bills."
+                },
+                {
+                    "input": "bills = [5, 5, 10, 10, 20]",
+                    "output": "false",
+                    "explanation": "You cannot provide change for the last customer."
+                }
+            ],
+            "link": "https://leetcode.com/problems/lemonade-change/",
+            "objective": "Manage your change effectively using a greedy algorithm approach.",
+            "key_concept": "Use Hashmap for counting and Two Pointers for managing cash flow."
+        },
+        {
+            "title": "Roman to Integer",
+            "description": "Given a string `s` representing a Roman numeral, convert it to an integer. Roman numerals are typically written largest to smallest from left to right. The numeral system includes instances where subtraction is used (e.g., IV for 4). Your task is to correctly parse and sum these values to produce the integer result.",
+            "constraints": [
+                "1 ≤ `s.length` ≤ 15",
+                "`s` consists of characters: 'I', 'V', 'X', 'L', 'C', 'D', 'M'.",
+                "`s` is guaranteed to be a valid Roman numeral representing a number in the range [1, 3999]."
+            ],
+            "examples": [
+                {
+                    "input": "s = \"MCMXCIV\"",
+                    "output": "1994",
+                    "explanation": "M = 1000, CM = 900, XC = 90, IV = 4."
+                },
+                {
+                    "input": "s = \"LVIII\"",
+                    "output": "58",
+                    "explanation": "L = 50, V = 5, III = 3."
+                }
+            ],
+            "link": "https://leetcode.com/problems/roman-to-integer/",
+            "objective": "Parse and convert Roman numerals into integers.",
+            "key_concept": "Use Hashmap to map Roman symbols to their respective values."
+        }
+    ],
+    "suggested_reading": [
+        {
+            "title": "Two Pointers Technique: A Complete Guide",
+            "link": "https://www.geeksforgeeks.org/two-pointers-technique/"
+        },
+        {
+            "title": "Understanding Hashmaps and Their Applications",
+            "link": "https://www.geeksforgeeks.org/hash-map-in-java/"
+        }
+    ]
+}
