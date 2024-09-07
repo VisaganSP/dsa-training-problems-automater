@@ -1,23 +1,23 @@
 
-## Introduction to Two Pointers new and Hashmap 🚀
+## Introduction to Two Pointers sf and Hashmap sdfsdf 🚀
 
-#### Day 5 - 06-09-2024
+#### Day 5 - 04-09-2024
 
-#### **📖 Concepts of Two Pointers new and Hashmap**
+#### **📖 Concepts of Two Pointers sf and Hashmap sdfsdf**
 
-### Two Pointers new
+### Two Pointers sf
 The Two Pointers technique involves using two indices to traverse a data structure (typically an array or a string). This method can help reduce the time complexity of problems that require checking pairs or managing subarray ranges. It is particularly useful for problems related to sorted arrays, linked lists, and searching pairs in linear time.
 
 #### 🔍 Real-time Example
 Two pointers can efficiently solve the problem of finding pairs in a sorted array that sum up to a target value.
 
-### Hashmap
+### Hashmap sdfsdf
 A Hashmap is a data structure that maps keys to values for highly efficient lookups. It allows storing data in key-value pairs, where each key is unique, and is often used to solve problems involving frequency counting, caching, and quick data retrieval.
 
 #### 🔍 Real-time Example
 Using a Hashmap, you can count the frequency of words in a document or keep track of the inventory in an e-commerce application.
 
-#### **✨ Advantages of Two Pointers new and Hashmap**
+#### **✨ Advantages of Two Pointers sf and Hashmap sdfsdf**
 
 - **_Two Pointers_**:
   - Reduces time complexity from O(n²) to O(n) for certain problems.
@@ -35,7 +35,7 @@ Using a Hashmap, you can count the frequency of words in a document or keep trac
   - Frequency counting in strings and arrays.
   - Implementing caches for faster access.
 
-#### **🛠️ Implementing Two Pointers new and Hashmap**
+#### **🛠️ Implementing Two Pointers sf and Hashmap sdfsdf**
 
 **_Lemonade Change_**
 
