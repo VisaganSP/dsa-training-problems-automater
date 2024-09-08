@@ -1,0 +1,95 @@
+{
+    "date": "10-09-2024",
+    "day": "Day 6",
+    "topic1": "Dynamic Programming",
+    "topic2": "Backtracking",
+    "topic1_intro": "Dynamic Programming (DP) is a technique for solving complex problems by breaking them down into simpler overlapping subproblems. It is used when the problem can be divided into smaller subproblems that are solved independently and combined to get the final solution. DP can be applied using either memoization (top-down) or tabulation (bottom-up) approaches.",
+    "topic1_example": "Using DP to find the minimum cost path in a grid.",
+    "topic2_intro": "Backtracking is a method for solving problems by exploring all potential solutions and eliminating those that do not meet the criteria. It involves trying out different possibilities and undoing or 'backtracking' when a choice leads to an invalid solution. This method is often used for constraint satisfaction problems and combinatorial problems.",
+    "topic2_example": "Using backtracking to solve the N-Queens problem.",
+    "advantages": {
+        "topic1": {
+            "title": "Dynamic Programming",
+            "points": [
+                "Transforms exponential time problems into polynomial time solutions.",
+                "Effective for problems with optimal substructure and overlapping subproblems."
+            ]
+        },
+        "topic2": {
+            "title": "Backtracking",
+            "points": [
+                "Useful for problems where all potential solutions need to be explored.",
+                "Effective for constraint satisfaction and combinatorial problems."
+            ]
+        }
+    },
+    "use_cases": {
+        "topic1": {
+            "title": "Dynamic Programming",
+            "points": [
+                "Finding the longest common subsequence.",
+                "Calculating the maximum profit from stock trading."
+            ]
+        },
+        "topic2": {
+            "title": "Backtracking",
+            "points": [
+                "Generating permutations and combinations.",
+                "Solving puzzles like Sudoku and crosswords."
+            ]
+        }
+    },
+    "problems": [
+        {
+            "title": "Coin Change",
+            "description": "Given a set of coin denominations and a total amount, find the minimum number of coins needed to make up that amount. If it is not possible to make up the amount, return -1.",
+            "constraints": [
+                "1 ≤ `coins.length` ≤ 12",
+                "1 ≤ `amount` ≤ 10⁴"
+            ],
+            "examples": [
+                {
+                    "input": "coins = [1, 2, 5], amount = 11",
+                    "output": "3",
+                    "explanation": "The minimum number of coins is 3 (5 + 5 + 1)."
+                },
+                {
+                    "input": "coins = [2], amount = 3",
+                    "output": "-1",
+                    "explanation": "It is not possible to make the amount using only coin 2."
+                }
+            ],
+            "link": "https://leetcode.com/problems/coin-change/",
+            "objective": "Find the minimum number of coins required to make up the given amount using DP.",
+            "key_concept": "Use DP to keep track of the minimum coins needed for each amount."
+        },
+        {
+            "title": "Subsets",
+            "description": "Given a set of distinct integers, return all possible subsets (the power set). The solution set must not contain duplicate subsets.",
+            "constraints": [
+                "1 ≤ `nums.length` ≤ 10",
+                "`nums` consists of distinct integers."
+            ],
+            "examples": [
+                {
+                    "input": "nums = [1, 2, 3]",
+                    "output": "[[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]",
+                    "explanation": "All possible subsets of the given set are returned."
+                }
+            ],
+            "link": "https://leetcode.com/problems/subsets/",
+            "objective": "Generate all possible subsets using backtracking.",
+            "key_concept": "Use backtracking to explore all possible combinations."
+        }
+    ],
+    "suggested_reading": [
+        {
+            "title": "Dynamic Programming: A Comprehensive Guide",
+            "link": "https://www.geeksforgeeks.org/dynamic-programming/"
+        },
+        {
+            "title": "Backtracking Algorithm: An Introduction",
+            "link": "https://www.geeksforgeeks.org/backtracking/"
+        }
+    ]
+}

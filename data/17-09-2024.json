@@ -1,0 +1,90 @@
+{
+    "date": "17-09-2024",
+    "day": "Day 8",
+    "topic1": "Heap",
+    "topic2": "Trie",
+    "topic1_intro": "A Heap is a specialized tree-based data structure that satisfies the heap property. It is commonly used to implement priority queues. In a max-heap, for any given node, the value of that node is greater than or equal to the values of its children. In a min-heap, the value of the node is less than or equal to the values of its children.",
+    "topic1_example": "Using a heap to efficiently get the k largest elements from an array.",
+    "topic2_intro": "A Trie (or prefix tree) is a specialized tree used to store dynamic sets of strings where the keys are usually strings. It allows for fast retrieval of strings and is commonly used for tasks involving prefix matching or dictionary-based searching.",
+    "topic2_example": "Using a Trie to implement autocomplete functionality.",
+    "advantages": {
+        "topic1": {
+            "title": "Heap",
+            "points": [
+                "Allows for efficient priority queue operations.",
+                "Provides logarithmic time complexity for insertion and deletion."
+            ]
+        },
+        "topic2": {
+            "title": "Trie",
+            "points": [
+                "Efficiently supports prefix-based searching and insertion.",
+                "Optimized for operations on strings such as autocomplete."
+            ]
+        }
+    },
+    "use_cases": {
+        "topic1": {
+            "title": "Heap",
+            "points": [
+                "Implementing priority queues.",
+                "Finding the k smallest or largest elements in an array."
+            ]
+        },
+        "topic2": {
+            "title": "Trie",
+            "points": [
+                "Autocomplete and spell checking.",
+                "Longest common prefix problem."
+            ]
+        }
+    },
+    "problems": [
+        {
+            "title": "Top K Frequent Elements",
+            "description": "Given an array of integers and an integer k, return the k most frequent elements. You may assume that the answer is unique.",
+            "constraints": [
+                "1 ≤ `nums.length` ≤ 10⁵",
+                "1 ≤ `k` ≤ `nums.length`"
+            ],
+            "examples": [
+                {
+                    "input": "nums = [1, 1, 1, 2, 2, 3], k = 2",
+                    "output": "[1, 2]",
+                    "explanation": "The two most frequent elements are 1 and 2."
+                }
+            ],
+            "link": "https://leetcode.com/problems/top-k-frequent-elements/",
+            "objective": "Find the top k most frequent elements using a heap-based approach.",
+            "key_concept": "Use a max-heap to track the k most frequent elements."
+        },
+        {
+            "title": "Implement Trie (Prefix Tree)",
+            "description": "Implement a Trie with insert, search, and startsWith methods. Trie should be able to store words and support efficient prefix-based queries.",
+            "constraints": [
+                "1 ≤ `word.length` ≤ 2000",
+                "1 ≤ `prefix.length` ≤ 2000"
+            ],
+            "examples": [
+                {
+                    "input": "insert(\"apple\"), search(\"apple\"), search(\"app\"), startsWith(\"app\"), insert(\"app\"), search(\"app\")",
+                    "output": "[true, true, false, true, true]",
+                    "explanation": "Words and prefixes are inserted and queried efficiently."
+                }
+            ],
+            "link": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+            "objective": "Implement a Trie data structure and its operations.",
+            "key_concept": "Use Trie to store and retrieve words with efficient prefix-based searches."
+        }
+    ],
+    "suggested_reading": [
+        {
+            "title": "Introduction to Heaps",
+            "link": "https://www.geeksforgeeks.org/heap-data-structure/"
+        },
+        {
+            "title": "Trie Data Structure Explained",
+            "link": "https://www.geeksforgeeks.org/trie-insert-and-search/"
+        }
+    ]
+}

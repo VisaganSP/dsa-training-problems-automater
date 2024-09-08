@@ -1,0 +1,100 @@
+{
+    "date": "09-09-2024",
+    "day": "Day 5",
+    "topic1": "Sliding Window",
+    "topic2": "Binary Search",
+    "topic1_intro": "The Sliding Window technique involves creating a window that can expand or contract as needed to find the optimal solution to a problem. This method is especially useful for problems that require working with contiguous subarrays or substrings. It can efficiently handle problems related to finding the minimum or maximum values within a sliding window.",
+    "topic1_example": "Using Sliding Window to find the maximum sum of any contiguous subarray of size k.",
+    "topic2_intro": "Binary Search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing the search interval in half. If the value of the search key is less than the item in the middle of the interval, the algorithm narrows the interval to the lower half, otherwise to the upper half. This method is useful for searching in sorted data and optimizing algorithms involving sorted arrays or lists.",
+    "topic2_example": "Binary Search can be used to find the position of a target value in a sorted array.",
+    "advantages": {
+        "topic1": {
+            "title": "Sliding Window",
+            "points": [
+                "Reduces the time complexity of problems involving subarrays from O(n²) to O(n).",
+                "Efficient for problems related to contiguous subarray or substring."
+            ]
+        },
+        "topic2": {
+            "title": "Binary Search",
+            "points": [
+                "Provides O(log n) time complexity for search operations in sorted arrays.",
+                "Efficient for problems involving sorted data and range queries."
+            ]
+        }
+    },
+    "use_cases": {
+        "topic1": {
+            "title": "Sliding Window",
+            "points": [
+                "Finding the maximum sum of a fixed-size subarray.",
+                "Determining the longest substring without repeating characters."
+            ]
+        },
+        "topic2": {
+            "title": "Binary Search",
+            "points": [
+                "Searching for an element in a sorted array.",
+                "Finding the first or last occurrence of an element in a sorted list."
+            ]
+        }
+    },
+    "problems": [
+        {
+            "title": "Maximum Sum Subarray of Size K",
+            "description": "Given an array of integers and a number k, find the maximum sum of any contiguous subarray of size k.",
+            "constraints": [
+                "1 ≤ `arr.length` ≤ 10⁵",
+                "1 ≤ `k` ≤ `arr.length`"
+            ],
+            "examples": [
+                {
+                    "input": "arr = [1, 2, 3, 4, 5], k = 3",
+                    "output": "12",
+                    "explanation": "The maximum sum subarray of size 3 is [3, 4, 5], and its sum is 12."
+                },
+                {
+                    "input": "arr = [2, 1, 5, 1, 3, 2], k = 3",
+                    "output": "9",
+                    "explanation": "The maximum sum subarray of size 3 is [5, 1, 3], and its sum is 9."
+                }
+            ],
+            "link": "https://leetcode.com/problems/maximum-sum-of-subarray-of-size-k/",
+            "objective": "Find the maximum sum of a contiguous subarray of size k using the Sliding Window technique.",
+            "key_concept": "Use Sliding Window to maintain and update the sum of the current window."
+        },
+        {
+            "title": "Binary Search on Sorted Array",
+            "description": "Given a sorted array and a target value, return the index of the target if it exists in the array, otherwise return -1.",
+            "constraints": [
+                "1 ≤ `arr.length` ≤ 10⁵",
+                "`arr` is sorted in ascending order."
+            ],
+            "examples": [
+                {
+                    "input": "arr = [1, 2, 3, 4, 5], target = 3",
+                    "output": "2",
+                    "explanation": "The target value 3 is located at index 2."
+                },
+                {
+                    "input": "arr = [1, 2, 3, 4, 5], target = 6",
+                    "output": "-1",
+                    "explanation": "The target value 6 does not exist in the array."
+                }
+            ],
+            "link": "https://leetcode.com/problems/binary-search/",
+            "objective": "Implement Binary Search to efficiently find an element in a sorted array.",
+            "key_concept": "Use Binary Search to divide the array and find the target value."
+        }
+    ],
+    "suggested_reading": [
+        {
+            "title": "Sliding Window Technique Explained",
+            "link": "https://www.geeksforgeeks.org/sliding-window-maximum-using-deque/"
+        },
+        {
+            "title": "Introduction to Binary Search",
+            "link": "https://www.geeksforgeeks.org/binary-search/"
+        }
+    ]
+}

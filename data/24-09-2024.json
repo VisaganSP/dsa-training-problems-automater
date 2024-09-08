@@ -1,0 +1,89 @@
+{
+    "date": "24-09-2024",
+    "day": "Day 10",
+    "topic1": "Hashing",
+    "topic2": "Segment Tree",
+    "topic1_intro": "Hashing is a technique used to map data of arbitrary size to fixed-size values. It involves the use of a hash function to convert input data into a hash code, which can then be used to index data in a hash table. Hashing is commonly used for fast data retrieval and to handle collisions in hash tables.",
+    "topic1_example": "Using hashing to quickly find duplicates in an array.",
+    "topic2_intro": "A Segment Tree is a data structure that allows for efficient range queries and updates. It is used to perform operations on intervals or segments of an array, such as range sum queries or range minimum queries, with logarithmic time complexity for both updates and queries.",
+    "topic2_example": "Using a Segment Tree to calculate the sum of elements within a given range of an array.",
+    "advantages": {
+        "topic1": {
+            "title": "Hashing",
+            "points": [
+                "Provides constant time complexity for average case lookups, insertions, and deletions.",
+                "Efficient for handling large datasets and frequent queries."
+            ]
+        },
+        "topic2": {
+            "title": "Segment Tree",
+            "points": [
+                "Allows efficient range queries and updates.",
+                "Handles complex range operations like sum, minimum, maximum, and greatest common divisor."
+            ]
+        }
+    },
+    "use_cases": {
+        "topic1": {
+            "title": "Hashing",
+            "points": [
+                "Implementing hash tables and hash maps.",
+                "Detecting duplicates in data and checking membership."
+            ]
+        },
+        "topic2": {
+            "title": "Segment Tree",
+            "points": [
+                "Range queries and updates in arrays.",
+                "Handling dynamic array operations efficiently."
+            ]
+        }
+    },
+    "problems": [
+        {
+            "title": "Find All Anagrams in a String",
+            "description": "Given a string s and a non-empty string p, find all the start indices of p's anagrams in s. Strings consist of lowercase English letters only.",
+            "constraints": [
+                "1 ≤ `s.length`, `p.length` ≤ 10⁴"
+            ],
+            "examples": [
+                {
+                    "input": "s = \"cbaebabacd\", p = \"abc\"",
+                    "output": "[0, 6]",
+                    "explanation": "The anagrams of 'abc' in 'cbaebabacd' start at indices 0 and 6."
+                }
+            ],
+            "link": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+            "objective": "Find all starting indices of p's anagrams in s using hashing.",
+            "key_concept": "Use a hash table to track character frequencies and sliding window for efficient searching."
+        },
+        {
+            "title": "Range Sum Query - Mutable",
+            "description": "Given an integer array nums and an integer array updates, implement a segment tree that supports range sum queries and range updates. Perform a series of updates and queries on the array.",
+            "constraints": [
+                "1 ≤ `nums.length` ≤ 10⁵",
+                "1 ≤ `updates.length` ≤ 10⁵"
+            ],
+            "examples": [
+                {
+                    "input": "nums = [1, 3, 5], updates = [[1, 2, 2], [0, 1, 1]]",
+                    "output": "The final array after updates and queries.",
+                    "explanation": "The segment tree is used to efficiently process range updates and queries."
+                }
+            ],
+            "link": "https://leetcode.com/problems/range-sum-query-mutable/",
+            "objective": "Implement a Segment Tree for efficient range updates and queries.",
+            "key_concept": "Use Segment Tree to handle range queries and updates with logarithmic time complexity."
+        }
+    ],
+    "suggested_reading": [
+        {
+            "title": "Hashing: Concepts and Applications",
+            "link": "https://www.geeksforgeeks.org/hash-table/"
+        },
+        {
+            "title": "Segment Tree Explained",
+            "link": "https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/"
+        }
+    ]
+}

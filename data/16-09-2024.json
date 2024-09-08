@@ -1,0 +1,90 @@
+{
+    "date": "16-09-2024",
+    "day": "Day 7",
+    "topic1": "Greedy Algorithms",
+    "topic2": "Graph Traversal",
+    "topic1_intro": "Greedy Algorithms build up a solution piece by piece, always choosing the next piece that offers the most immediate benefit. The greedy choice is made with the hope that this local optimization will lead to a global optimum. Greedy algorithms are used for optimization problems where a series of local optimal choices lead to a global solution.",
+    "topic1_example": "Using a greedy algorithm to find the minimum number of coins needed for a given amount.",
+    "topic2_intro": "Graph Traversal refers to techniques for visiting all the nodes in a graph systematically. Common traversal methods include Depth-First Search (DFS) and Breadth-First Search (BFS). These methods are used to explore nodes and edges of a graph and are foundational for many graph-related algorithms.",
+    "topic2_example": "Using BFS to find the shortest path in an unweighted graph.",
+    "advantages": {
+        "topic1": {
+            "title": "Greedy Algorithms",
+            "points": [
+                "Often provides a simple and intuitive approach to optimization problems.",
+                "Can be more efficient than other methods for certain types of problems."
+            ]
+        },
+        "topic2": {
+            "title": "Graph Traversal",
+            "points": [
+                "Essential for solving problems related to paths, connectivity, and graph components.",
+                "Provides foundational techniques for many advanced graph algorithms."
+            ]
+        }
+    },
+    "use_cases": {
+        "topic1": {
+            "title": "Greedy Algorithms",
+            "points": [
+                "Huffman coding for data compression.",
+                "Activity selection problem."
+            ]
+        },
+        "topic2": {
+            "title": "Graph Traversal",
+            "points": [
+                "Finding the shortest path in unweighted graphs.",
+                "Solving puzzles like mazes and Sudoku."
+            ]
+        }
+    },
+    "problems": [
+        {
+            "title": "Activity Selection",
+            "description": "Given a set of activities with start and end times, select the maximum number of activities that don't overlap.",
+            "constraints": [
+                "1 ≤ `n` ≤ 10⁵",
+                "Activities are given with their start and end times."
+            ],
+            "examples": [
+                {
+                    "input": "activities = [[1, 4], [2, 6], [5, 7], [8, 9]]",
+                    "output": "3",
+                    "explanation": "Select activities [1, 4], [5, 7], and [8, 9] for maximum count without overlap."
+                }
+            ],
+            "link": "https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/",
+            "objective": "Select the maximum number of non-overlapping activities using a greedy approach.",
+            "key_concept": "Use greedy choice to select the earliest finishing activity that is compatible with the previously selected activities."
+        },
+        {
+            "title": "Shortest Path in an Unweighted Graph",
+            "description": "Given an unweighted graph and a starting node, find the shortest path to all other nodes using BFS.",
+            "constraints": [
+                "1 ≤ `nodes` ≤ 10⁵",
+                "Graph is represented using an adjacency list."
+            ],
+            "examples": [
+                {
+                    "input": "graph = {0: [1, 2], 1: [2], 2: [3], 3: []}, start = 0",
+                    "output": "[0, 1, 1, 2]",
+                    "explanation": "Shortest paths from node 0 are [0, 1, 1, 2] to nodes 0, 1, 2, and 3 respectively."
+                }
+            ],
+            "link": "https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/",
+            "objective": "Find the shortest path in an unweighted graph using BFS.",
+            "key_concept": "Use BFS to explore nodes level by level, ensuring the shortest path is found."
+        }
+    ],
+    "suggested_reading": [
+        {
+            "title": "Greedy Algorithms and Their Applications",
+            "link": "https://www.geeksforgeeks.org/greedy-algorithms/"
+        },
+        {
+            "title": "Graph Traversal Techniques",
+            "link": "https://www.geeksforgeeks.org/graph-traversal-techniques/"
+        }
+    ]
+}
